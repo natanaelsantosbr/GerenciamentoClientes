@@ -1,0 +1,22 @@
+﻿@using WebV2.Entidades;
+@model Cliente
+
+<h1>Detalhes do Cliente</h1>
+
+<div class="form-group">
+    <label>Nome</label>
+    <input class="form-control" asp-for="Nome" disabled />
+</div>
+<div class="form-group">
+    <label>Email</label>
+    <input class="form-control" asp-for="Email" disabled />
+</div>
+<div class="form-group">
+    <label>Telefone</label>
+    <input class="form-control" asp-for="Telefone" disabled />
+</div>
+
+<p>
+    <a asp-action="Editar" asp-route-id="@Model.Id">Editar</a> |
+    <a asp-action="Index">Voltar para a lista</a>
+</p>
